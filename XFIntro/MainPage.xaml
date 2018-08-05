@@ -10,7 +10,8 @@
               ItemsSource="{Binding Contacts}"
               IsRefreshing="{Binding IsRefreshing}"
               RefreshCommand="{Binding RefreshContacts}"
-              IsPullToRefreshEnabled="true">
+              IsPullToRefreshEnabled="true"
+              ItemSelected="HandleItemSelected">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <TextCell Text="{Binding LastName}"

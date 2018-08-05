@@ -13,9 +13,14 @@ namespace XFIntro
 
             var tabbedPage = new TabbedPage();
 
-            tabbedPage.Children.Add(new MainPage());
+            tabbedPage.Children.Add(
+                new NavigationPage(new MainPage())
+                {
+                    Title = "Contacts"
+                }
+            );
 
-            tabbedPage.Children.Add(new Page { Title = "Second Page" });
+            tabbedPage.Children.Add(new Xamarin.Forms.Page { Title = "Second Page" });
 
             MainPage = tabbedPage;
         }

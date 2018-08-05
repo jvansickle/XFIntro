@@ -1,4 +1,6 @@
 ﻿using Xamarin.Forms;
+using XFIntro.Model;
+using XFIntro.Page;
 using XFIntro.ViewModel;
 
 namespace XFIntro
@@ -10,6 +12,11 @@ namespace XFIntro
             InitializeComponent();
 
             BindingContext = new MainViewModel();
+        }
+
+        void HandleItemSelected(object sender, SelectedItemChangedEventArgs args)
+        {
+            Navigation.PushAsync(new ContactDetailPage(args.SelectedItem as Contact));
         }
     }
 }
