@@ -5,6 +5,16 @@
              x:Class="XFIntro.MainPage">
     
     <ListView VerticalOptions="FillAndExpand"
-              x:Name="TheListView"/>
+              ItemsSource="{Binding Contacts}"
+              IsRefreshing="{Binding IsRefreshing}"
+              RefreshCommand="{Binding RefreshContacts}"
+              IsPullToRefreshEnabled="true">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Text="{Binding LastName}"
+                          Detail="{Binding FirstName}"/>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
     
 </ContentPage>

@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
+using XFIntro.ViewModel;
 
 namespace XFIntro
 {
@@ -9,12 +9,7 @@ namespace XFIntro
         {
             InitializeComponent();
 
-            TheListView.ItemsSource = new List<string>
-            {
-                "Contact 1",
-                "Contact 2",
-                "Contact 3"
-            };
+            BindingContext = new MainViewModel();
         }
     }
 }
