@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:XFIntro"
              x:Class="XFIntro.MainPage"
-             x:Name="TheMainPage">
+             x:Name="TheMainPage"
+             Title="Contacts">
     
     <ListView VerticalOptions="FillAndExpand"
               ItemsSource="{Binding Contacts}"

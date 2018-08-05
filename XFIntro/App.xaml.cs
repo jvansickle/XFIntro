@@ -11,7 +11,13 @@ namespace XFIntro
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            var tabbedPage = new TabbedPage();
+
+            tabbedPage.Children.Add(new MainPage());
+
+            tabbedPage.Children.Add(new Page { Title = "Second Page" });
+
+            MainPage = tabbedPage;
         }
 
         protected override void OnStart()
