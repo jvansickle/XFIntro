@@ -20,6 +20,8 @@ namespace XFIntro.ViewModel
 
         public ICommand RefreshContacts => new Command(LoadContacts);
 
+        public ICommand DeleteContact => new Command((contact) => Contacts.Remove(contact as Contact));
+
         public MainViewModel()
         {
             Contacts = new ObservableCollection<Contact>();

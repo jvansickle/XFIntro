@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:XFIntro"
-             x:Class="XFIntro.MainPage">
+             x:Class="XFIntro.MainPage"
+             x:Name="TheMainPage">
     
     <ListView VerticalOptions="FillAndExpand"
               ItemsSource="{Binding Contacts}"
@@ -12,7 +13,14 @@
         <ListView.ItemTemplate>
             <DataTemplate>
                 <TextCell Text="{Binding LastName}"
-                          Detail="{Binding FirstName}"/>
+                          Detail="{Binding FirstName}">
+                    <TextCell.ContextActions>
+                        <MenuItem Text="Delete"
+                                  IsDestructive="true"
+                                  Command="{Binding Source={x:Reference TheMainPage}, Path=BindingContext.DeleteContact}"
+                                  CommandParameter="{Binding .}"/>
+                    </TextCell.ContextActions>
+                </TextCell>
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>
