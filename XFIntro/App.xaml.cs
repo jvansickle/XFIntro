@@ -16,7 +16,8 @@ namespace XFIntro
             tabbedPage.Children.Add(
                 new NavigationPage(new MainPage())
                 {
-                    Title = "Contacts"
+                    Title = "Contacts",
+                    Icon = "contactIcon"
                 }
             );
 

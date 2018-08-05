@@ -139,6 +139,9 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\contactIcon.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\contactIcon.imageset\user-shape.png" />
+    <ImageAsset Include="Assets.xcassets\contactIcon.imageset\user-shape-2.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -155,5 +158,9 @@
       <Project>{C84D2918-4D1B-4CE6-B7F5-88D7E36681B6}</Project>
       <Name>XFIntro</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets.xcassets\contactIcon.imageset\" />
+    <Folder Include="Assets.xcassets\contactIcon.imageset\" />
   </ItemGroup>
 </Project>
