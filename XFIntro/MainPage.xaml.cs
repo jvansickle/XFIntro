@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Xamarin.Forms;
 
 namespace XFIntro
@@ -12,6 +8,13 @@ namespace XFIntro
         public MainPage()
         {
             InitializeComponent();
+
+            TheListView.ItemsSource = new List<string>
+            {
+                "Contact 1",
+                "Contact 2",
+                "Contact 3"
+            };
         }
     }
 }
