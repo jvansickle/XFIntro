@@ -14,7 +14,4 @@
     <Folder Include="Page\" />
     <Folder Include="Behavior\" />
   </ItemGroup>
-  <ItemGroup>
-    <Compile Remove="Behavior\NumericValidation.cs" />
-  </ItemGroup>
 </Project>

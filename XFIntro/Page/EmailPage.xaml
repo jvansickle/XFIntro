@@ -12,6 +12,9 @@
                     <Validator:EmailValidation/>
                 </Entry.Behaviors>
             </Entry>
+
+            <Entry Placeholder="Number"
+                   Validator:NumericValidation.AttachBehavior="true"/>
         </StackLayout>
     </ContentPage.Content>
     
