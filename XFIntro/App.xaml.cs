@@ -1,6 +1,7 @@
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XFIntro.Page;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace XFIntro
@@ -22,6 +23,8 @@ namespace XFIntro
             );
 
             tabbedPage.Children.Add(new Xamarin.Forms.Page { Title = "Second Page" });
+
+            tabbedPage.Children.Add(new EmailPage());
 
             MainPage = tabbedPage;
         }
