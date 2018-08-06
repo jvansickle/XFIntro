@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:Validator="clr-namespace:XFIntro.Behavior"
              x:Class="XFIntro.Page.EmailPage"
-             Title="Email">
+             Title="Email"
+             x:Name="ThePage">
     
     <ContentPage.Content>
         <StackLayout>
@@ -15,6 +16,20 @@
 
             <Entry Placeholder="Number"
                    Validator:NumericValidation.AttachBehavior="true"/>
+
+            <Label Text="Don't tap me!">
+                <Label.Behaviors>
+                    <Validator:TapWarningBehavior Page="{x:Reference ThePage}"/>
+                </Label.Behaviors>
+            </Label>
+
+            <Image Source="AppIcon"
+                   HeightRequest="40">
+                <Image.Behaviors>
+                    <Validator:TapWarningBehavior Page="{x:Reference ThePage}"
+                                                  Message="What did you expect to happen?"/>
+                </Image.Behaviors>
+            </Image>
         </StackLayout>
     </ContentPage.Content>
     
