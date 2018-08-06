@@ -13,5 +13,6 @@
     <Folder Include="Service\" />
     <Folder Include="Page\" />
     <Folder Include="Behavior\" />
+    <Folder Include="Effect\" />
   </ItemGroup>
 </Project>

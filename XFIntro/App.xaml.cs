@@ -26,6 +26,8 @@ namespace XFIntro
 
             tabbedPage.Children.Add(new EmailPage());
 
+            tabbedPage.Children.Add(new EffectExamplePage());
+
             MainPage = tabbedPage;
         }
 
