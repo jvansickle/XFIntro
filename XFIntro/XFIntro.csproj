@@ -14,5 +14,6 @@
     <Folder Include="Page\" />
     <Folder Include="Behavior\" />
     <Folder Include="Effect\" />
+    <Folder Include="Element\" />
   </ItemGroup>
 </Project>

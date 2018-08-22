@@ -28,6 +28,8 @@ namespace XFIntro
 
             tabbedPage.Children.Add(new EffectExamplePage());
 
+            tabbedPage.Children.Add(new CustomRendererPage());
+
             MainPage = tabbedPage;
         }
 
